@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rata Mala</title>
+</head>
+<style>
+
+	* {
+		padding: 0%;
+		margin: 0%;
+		box-sizing: border-box;
+	}
+	.text {
+		position: absolute;
+		top: 25%;
+		font-size: 3rem;
+		font-family: "montserrat",sans-serif;
+		padding: 2rem 4rem;
+		color: #FFA1F5;
+		text-shadow: 5px 5px 20px black;
+
+	}
+	.ABI {
+		position: absolute;
+		top: 85%;
+		font-size: 3rem;
+		font-family: "montserrat",sans-serif;
+		padding: 2rem 4rem;
+		color: #310c96;
+		text-shadow: 5px 5px 20px rgb(255, 255, 255);
+
+	}
+	.heart-button {
+            background: none;
+            color: white;
+            border: none;
+            border-radius: 20%;
+            width: 0px;
+            height: 120px;
+            text-align: center;
+            font-size: 170px;
+            cursor: pointer;
+			right: 500px;
+        }
+
+	.gradient {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		width: 100vw;
+		background: linear-gradient(45deg, #35155d, #512B81, #4477CE, #8CABFF);
+		background-size: 300% 300%;
+		animation: colors 7s ease infinite
+	}
+	.heart-button:hover {
+            background: none;
+	}
+
+	@keyframes colors {
+		0% {
+			background-position: 0% 50%;
+
+		}
+
+		50% {
+			background-position: 100% 50%;
+
+		}
+
+		100% {
+			background-position: 0% 50%;
+
+		}
+	}
+
+
+</style>
+
+<body class="gradient"></div>
+	
+	<button class="heart-button" onclick="sim()">❤️</button>
+	
+	<h2 class="text"> DALE CLIC PLAY Y DESPUES CLIC AL CORAZON</h2>
+	
+
+	<audio style="position: relative; top: 30%; right: 35px; border: none;" controls>
+		<source src="musica.mp3">
+	</audio>
+	<h0 class="ABI">Para Abichu</h0>
+</body>
+
+<script>
+    function sim() {
+        alert("Eres como la luna. Brillante por fuera y fuerte por dentro. A veces es como el sol. Radiante por dentro y cálida por fuera. A veces es como una estrella, brillante por fuera además de fija y llamativa. ¿Por qué hago comparaciones, si tú eres mi universo? Noto cada detalle de ti. Te amo y te dedico esta canción.")
+    }
+</script>
+
+</html>
